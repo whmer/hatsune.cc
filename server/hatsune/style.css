@@ -1,0 +1,305 @@
+*{margin:0;padding:0;box-sizing:border-box;}
+
+:root{
+    --sam:"SF Pro Text", "SF Pro Icons", system, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", "Ubuntu", "Cantarell", "Fira Sans", sans-serif;
+    --color-whats: #a333e4;
+}
+@font-face{
+    src: url('../fonts/DeezerProduct-Extrabold.ff5d8428e4fe802f91d53a06857feb145b0a435d.woff2');
+    font-family: sam;
+    font-style: normal;
+    font-weight: 400;
+}
+.mik{
+    font-family: sam;
+    margin: 10px;
+    font-size: 30px;
+}
+body{
+    color: #f7f7f7;
+    font-family: var(--sam);
+    background: #242424;
+    overflow-x: hidden;
+}
+.back{
+    background-color: #202020fb;
+    padding: 10px;
+}
+.carr{
+    width: 870px;
+    margin: 0 auto 10px;
+}
+@media(max-width:999px){
+    .carr{
+        width: 100%;
+        margin: 0 auto 10px;
+    }
+}
+
+.sty{
+    font-weight: 500;
+}
+
+#animerr{
+    animation: --animerr 0.6s linear infinite;
+}
+
+@keyframes --animerr{
+    from{
+        transition: 0.5s;
+        opacity: 0;
+    }
+    
+    to{
+        opacity: 1;
+    }
+}
+.backloading{
+    background: #13121279;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    display: none;
+}
+
+.loading{
+    background: #fff;
+    position: fixed;
+    top: 40%;
+    left: 0;
+    right: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #000;
+    width: 50%;
+    text-align: center;
+    width: 470px;
+    margin: 0 auto 10px;
+    border-radius: 10px;
+    display: none;
+    border: 1px solid #b9b7b79d;
+}
+.cardcc{
+    background-color: #000;
+    color: #fff;
+    height: 100vh;
+    display:none;
+    width: 870px;
+    margin: 0 auto 10px;
+}
+@media(max-width: 999px){
+    .cardcc{
+        width: 100%;
+    }
+    .loading{
+    width: 80%;
+    }
+}
+.infog{
+    width: 95%;
+    margin: 0 auto 10px;
+}
+.input{
+    margin: 5px;
+    width: 100%;
+}
+.cdd{
+    width: 95%;
+}
+
+.ccf{
+    padding: 10px;
+    width: 90%;
+    color: #fff;
+    background: #a333e4;
+    border: none;
+    border-radius: 50px;
+    font-size: 15px;
+    font-family: var(--sam);
+    margin: 0 auto 10px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.foty{
+    width: 100%;
+    text-align: center;
+    margin-top: 50%;
+}
+input{
+    outline: none;
+    border: 1px solid #6d6c6d8f;
+    font-size: 17px;
+    font-weight: 500;
+    font-family: var(--sam);
+    background: #18181896;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+    color: #fff;
+}
+
+.ccflex{
+    display: flex;
+    width: 95%;
+}
+
+.top{
+    background: #000000d5;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 0 0 rgba(0, 0, 0, .25);
+    position: fixed;
+    top: 0;
+    width: 870px;
+    margin: 0 auto 10px;
+    height: 8vh;
+    overflow: hidden;
+    display: flex;
+}
+@media(max-width:99px){
+    .top{
+        width: 100%;
+    }
+}
+.div{
+    background: #fff;
+    border-radius: 10px;
+    height: 4px;
+    width: 30px;
+}
+.imagehat{
+    text-align: center;
+    padding: 10px;
+    background: #131212;
+    border-bottom: 1px solid #332f35;
+}
+.image_disgr{
+    margin-left: 25px;
+}
+.name{
+    text-align: left;
+}
+.likn{
+    text-align: center;
+}
+.home{
+    background: #1d1d1dc4;
+width: 50px; padding: 10px; height: 100vh;
+display: none;
+}
+
+.mlogoname{
+    width: 50px;
+    margin: 10px;
+}
+
+.home_hb{
+    display: flex;
+    justify-content: space-around;
+}
+
+@media(max-width:999px){
+    .mlogoname{
+        display: none;
+    }
+    .home{
+        display: block;
+    }
+    .home_hb{
+        display: none;
+    }
+}
+
+.hatdfles{
+    text-align: center;
+}
+.ffgmain{
+    width: 60%;
+    background: #fff;
+}
+
+
+.frewrer{
+    padding: 10px;
+}
+p{
+    font-weight: 600;
+}
+.from{
+    text-align: center;
+}
+.btn{
+    padding: 5px;
+    padding-bottom: 10px;
+    width: 80%;
+    border-radius: 20px;
+    border: none;
+    background-color: #ee4630;
+    font-family: var(--sam);
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.btn:hover{
+    background-color: #dd3d28;
+    transition: 0.5s;
+}
+.pret{
+    width: 95%;
+    background: #141414;
+    text-align: left;
+    margin: 5px auto 10px;
+    border: 1px solid #a333e4;
+}
+
+.backwer{
+    background: #000000d5;
+    width: 100%;
+    position: fixed;
+    right: 0;
+    top: 8%;
+    height: 100vh;
+    display: none;
+    cursor: pointer;
+}
+
+.home_ha{
+    position: fixed;
+    top: 8%;
+    height: 100vh;
+    width: 220px;
+    background: #000000d5;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 0 0 rgba(0, 0, 0, .25);
+    animation: --hatsune 0.5s ease-in-out;
+}
+
+@keyframes --hatsune{
+    from{
+        transform: translateX(-470px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+
+.bottom{
+    background: #000000d5;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 0 0 rgba(0, 0, 0, .25);
+    padding: 10px;
+    position: fixed;
+    width: 870px;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    margin: 0 auto 10px;
+}
+@media(max-width:999px){
+    .bottom{
+        width: 100%;
+    }
+}
