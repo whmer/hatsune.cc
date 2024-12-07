@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,6 +27,18 @@
     font-weight: 400;
 }
     .backwar{
+        background-image: url('./EvFqchxWWDlWHov2Y4xRaqhMsY.webp');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size:cover;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        height: 100vh;
+    }
+    @media(max-width:999px){
+        .backwar{
         background-image: url('./hatsune/5044338557308742994.jpg');
         background-position: top center;
         background-repeat: no-repeat;
@@ -36,6 +48,7 @@
         right: 0;
         top: 0;
         height: 100vh;
+        }
     }
     .backf{
         position: fixed;
@@ -87,7 +100,7 @@
     <script>
         setTimeout(function(){
             window.location.href = "./hatsune.html"
-        }, 3000);
+        }, 5000);
     </script>
 </body>
 </html>
