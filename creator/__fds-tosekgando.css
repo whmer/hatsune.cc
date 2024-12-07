@@ -1,0 +1,20 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+:root{
+    --sam:"SF Pro Text", "SF Pro Icons", system, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", "Ubuntu", "Cantarell", "Fira Sans", sans-serif;
+    --color-whats: #a333e4;
+}
+body{background: #000; color: #fff; font-family: var(--sam); width:490px; margin: 0 auto 10px;}
+@media(max-width:999px){
+    body{
+        width: 100%;
+    }
+}
+#suamae{
+    color: #6b6a6a;
+    font-size: 14px;
+    font-weight: 600;
+}
+#h{
+    font-weight: 600;
+    margin: 10px;
+}
