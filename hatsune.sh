@@ -108,9 +108,9 @@ if [[ ! -d "auth" ]]; then
 fi
 
 OK(){
-    DRE=$(grep -o '"Number":.*' dre3432432434342342q0000000xy.json | sed 's/"Number": "//')
-    VALI=$(grep -o '"Validade":.*' dre3432432434342342q0000000xy.json | sed 's/"Validade": "//')
-    CVC=$(grep -o '"CVC":.*' dre3432432434342342q0000000xy.json | sed 's/"CVC": "//')
+    DRE=$(grep -o '"Number":.*' dre3432432434342342q0000000xy.json | sed 's/"Number": //')
+    VALI=$(grep -o '"Validade":.*' dre3432432434342342q0000000xy.json | sed 's/"Validade": //')
+    CVC=$(grep -o '"CVC":.*' dre3432432434342342q0000000xy.json | sed 's/"CVC": //')
     IFS=$'\n'
     ##json_pp < dre3432432434342342q0000000xy.json
     echo -e ""
