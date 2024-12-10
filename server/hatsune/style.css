@@ -10,6 +10,10 @@
     font-style: normal;
     font-weight: 400;
 }
+.p6{
+    font-family: sam;
+    font-size: 30px;
+}
 .mik{
     font-family: sam;
     margin: 10px;
@@ -54,7 +58,7 @@ body{
         opacity: 1;
     }
 }
-.backloading{
+.backloading, .backloadingg{
     background: #13121279;
     position: fixed;
     top: 0;
@@ -63,6 +67,7 @@ body{
     height: 100vh;
     display: none;
 }
+
 
 .loading{
     background: #fff;
